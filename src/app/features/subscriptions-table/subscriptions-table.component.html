@@ -1,0 +1,20 @@
+<h2>Subscriptions Table</h2>
+
+<table class="subscriptions-table__list">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>User Id</td>
+      <td>Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let subscription of subscriptions$ | async">
+      <td>{{ subscription.id }}</td>
+      <td>{{ subscription.name }}</td>
+      <td>{{ subscription.userId }}</td>
+      <td>{{ subscription.price }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,14 @@
+<div class="user-selector__container">
+  <h2>User selector</h2>
+
+  <button type="button" (click)="fetchUsers()">Fetch Users</button>
+
+  <ng-container *ngIf="users$ | async as users">
+    <label class="user-selector__label" for="userSelector">Choose User</label>
+    <select id="userSelector" class="user-selector__select">
+      <option *ngFor="let user of users" [value]="user.id">
+        {{ user.name }}, {{ user.age }}
+      </option>
+    </select>
+  </ng-container>
+</div>
