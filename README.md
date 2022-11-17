@@ -1,5 +1,3 @@
-# interview
-
 # Tasks section:
 
 - Create a new application route «/not-found» for a 404 Not Found page that tells your site viewers the requested page is unavailable
