@@ -20,10 +20,10 @@
 
   - Add the button «Check user’s subscriptions» that navigates user to the subscriptions page with the selected user ID «/subscriptions/{{selectedUserId}}»
 
-      - Add a loader element with a text «Loading…»:
-        - It should be rendered after user's click on the «Fetch Users» button (when request starts)
-        - It should be destroyed after response will be retrieved
-        - It should be replaced with the section that contains selector and "Check user’s subscriptions" button
+  - Add a loader element with a text «Loading…»:
+    - It should be rendered after user's click on the «Fetch Users» button (when request starts)
+    - It should be destroyed after response will be retrieved
+    - It should be replaced with the section that contains selector and "Check user’s subscriptions" button
 
 
 
